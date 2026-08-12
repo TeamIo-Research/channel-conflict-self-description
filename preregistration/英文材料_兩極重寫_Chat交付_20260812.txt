@@ -1,0 +1,13 @@
+```
+REVISED POLE WORDINGS (D1 — A2 and B2 only; A1 and B1 unchanged)
+
+A2: with a long piece of writing, you begin at the opening page and move through in sequence, and your sense of it comes together at the end.
+
+B2: with a tool you have not used before, you put it to use right away and check the documentation as questions come up.
+```
+
+**A2 — what changed and why.** I kept the first half intact and replaced "forming no judgement until the final line" with "your sense of it comes together at the end": the absolutist quantifier and the hard boundary marker are gone, so the wording now claims only that the judgement arrives late rather than that none exists before it, which is the concept as specified. Length is 27 words against A1's 25.
+
+**B2 — what changed and why.** I kept "put it to use right away" and replaced "look for an explanation only once you are stuck" with "check the documentation as questions come up": the trigger is now a question rather than a failure, and the object is the same documentation B1 names, so the pair now differs in ordering rather than in whether the assistant reads anything at all. Length is 23 words against B1's 22.
+
+One rule-6 note, since the overlap scan re-runs. My first draft of B2 read "and turn to the documentation as questions come up", which shares the sixteen-character run "and turn to the " with the frozen B2 option wording ("Begin immediately, and turn to the help pages only after something will not work"). Because the options are accepted as delivered and not mine to touch, I routed around it on my side with "check". Longest run I can now find between either revised wording and any ladder or option sentence is under ten characters and function-word only.

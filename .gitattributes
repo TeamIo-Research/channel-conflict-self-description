@@ -1,0 +1,7 @@
+# Frozen, hash-verified artefacts: preserve bytes exactly on every platform.
+# No line-ending or encoding conversion, ever, in either direction — the
+# whole point of this bundle is that its SHA-256 digests are reproducible by
+# a stranger after `git clone`, and any git-side text normalization would
+# make verify.py fail on clones with different autocrlf settings even though
+# the committed content is correct.
+preregistration/* -text
