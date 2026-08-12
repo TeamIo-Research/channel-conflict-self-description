@@ -34,8 +34,10 @@ It is not the study report. The report (with results) is written separately and 
 |---|---|---|
 | Initial freeze (Chinese package) | 2026-08-11 22:57:00 | manifest `57c0f7ae…` |
 | Revised and re-frozen (added English arm) | 2026-08-12 22:33:26 | manifest `cbb6604c…` |
-| **Public release (this repository)** | 2026-08-13 *(filled in at push time)* | GitHub commit |
+| **Public release (this repository)** | 2026-08-12 23:50:16 | GitHub commit `9b65d28` |
 | **Confirmatory data collection begins** | 2026-08-14 | Sprint start date |
+
+*Note on the two commits: the first push (`70174b7`, 23:45:09) had 8 files stored with CRLF-to-LF drift from a git index/`.gitattributes` timing issue, caught immediately by this repository's own Gate-3 fresh-clone verification before any external party had reason to have seen it. `9b65d28` is the corrected, verified content; its timestamp is what backs the pre-registration claim above.*
 
 The revision between the two freezes happened before any confirmatory data was collected; its reasoning and both manifest values are recorded in the report's deviation log (published with the report, not in this repository).
 
