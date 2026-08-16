@@ -1,0 +1,33 @@
+{
+ "models": {
+  "anthropic": "claude-sonnet-5",
+  "openai": "gpt-5.5",
+  "xai": "grok-4.3"
+ },
+ "excluded": {
+  "google": "gemini-3.6-flash"
+ },
+ "max_tokens": 1024,
+ "max_retries": 4,
+ "timeout": null,
+ "temperature": "not set",
+ "top_p": "not set",
+ "seed": "not set",
+ "n_reps": 15,
+ "k_values": [
+  4,
+  6,
+  9
+ ],
+ "cells": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E"
+ ],
+ "planned_zh": 1350,
+ "planned_en": 180,
+ "records_written": 1530,
+ "finished_at": "2026-08-14T21:28:27+0800"
+}

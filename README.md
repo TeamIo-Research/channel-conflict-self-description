@@ -26,7 +26,7 @@ A portability checklist covering the hard part (step 2) is included in `preregis
 
 This is the **pre-registration freeze**, published before any confirmatory data was collected. It exists to make one claim checkable by a stranger: that the stimulus materials, parsing rules, endpoint definitions, analysis plan, and pre-written result wording for both directions of outcome were all fixed and hashed *before* the instrument was run for score.
 
-It is not the study report. The report (with results) is written separately and will reference this repository once published.
+**As of 2026-08-16 this repository also carries the run, the data, the analysis, and the report** — see *Layout* below. The pre-registration bundle in `preregistration/` is unchanged and still verifies against the same manifest; everything added since is downstream of it.
 
 ## Timeline
 
@@ -36,6 +36,8 @@ It is not the study report. The report (with results) is written separately and 
 | Revised and re-frozen (added English arm) | 2026-08-12 22:33:26 | manifest `cbb6604c…` |
 | **Public release (this repository)** | 2026-08-12 23:50:16 | GitHub commit `9b65d28` |
 | **Confirmatory data collection begins** | 2026-08-14 | Sprint start date |
+| Confirmatory batch complete, 1,530/1,530, 0 failures | 2026-08-14 21:28:27 | `run/mainrun_params.json` |
+| Run, data, analysis and report added | 2026-08-16 | this commit |
 
 *Note on the two commits: the first push (`70174b7`, 23:45:09) had 8 files stored with CRLF-to-LF drift from a git index/`.gitattributes` timing issue, caught immediately by this repository's own Gate-3 fresh-clone verification before any external party had reason to have seen it. `9b65d28` is the corrected, verified content; its timestamp is what backs the pre-registration claim above.*
 
@@ -65,9 +67,43 @@ MANIFEST recorded   : cbb6604cc25ca4ab99335d125d9cc5c93c801c685a73df660d31509341
 preregistration/   the 17 frozen artefacts + _freeze_manifest.txt + verify.py
                     (includes lcs_check.py / lcs_check_en.py — the same-audit
                     scripts that checked probe/system-prompt overlap before freeze)
+
+run/               mainrun.py            the confirmatory batch runner
+                   mainrun_raw.json      all 1,530 conversations, complete transcripts
+                   mainrun_params.json   what was actually sent: pinned model ids, and
+                                         temperature / top_p / seed recorded as "not set"
+                   mainrun_console.log   the run's own log
+                   dryrun.py + dryrun_raw.json   the family-screening batch (2026-08-11)
+                   det1_*, det2_*        the non-determinism check: six conversations run
+                                         twice under identical frozen inputs, before the
+                                         confirmatory batch. 55 of 60 model turns differed
+                                         verbatim; 3 of 6 flipped their forced choice.
+                                         This is why n = 15 is fifteen observations.
+
+analysis/          analyse.py            applies the frozen parsing and attribution rules
+                                         (26 self-tests run before any data is read)
+                   tables.py             aggregation, degradation ladder, Holm, conservative bound
+                   power_mde.py          a-priori detectable effects — takes no data as input
+                   appendix_b5.py        descriptive decompositions (Tables B4b, B5)
+                   make_figure.py        Figure 1; hard-asserts every plotted value against
+                                         the published tables before writing the file
+                   check_e3_*.py         read-only checks on the disclosure annotation set
+                   verify_strings.py     stimulus strings in the run vs the frozen package
+                   prepush_scan.py       the credential/personal-data scan run before publishing
+                   analysis_per_conversation.jsonl   one classified record per conversation
+                   cold_review_*.py, judge_sim_*.py  the commissioned external reviews; each
+                                         extracts the reviewed text from the report by anchor
+                                         rather than retyping it
+
+disclosure/        E3_標記結果_20260815.json   every disclosure label, in full, with reasons
+                   make_e3_workbook.py / read_e3.py   how the sheet was built and read back
+                                         (read_e3.py enforces the codebook's own gates)
+
+report/            report_EN_20260816.md  the submitted report
+                   figure1.png
 ```
 
-*(`/materials` and `/scripts` from the original plan folded into `preregistration/` — every script in the manifest is integrity tooling for this exact bundle, not a general experiment runner, so splitting them out added a distinction without a difference. Flag if you'd rather keep them separate.)*
+Every number in the report is produced by a script here and copied from its output; nothing is transcribed by hand.
 
 ## License
 

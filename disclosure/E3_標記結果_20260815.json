@@ -1,0 +1,213 @@
+{
+ "labels": [
+  {
+   "jid": "en|xai|A|A|9|00",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|A|A|9|02",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|A|A|9|03",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|A|A|9|04",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|A|A|9|08",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|A|A|9|10",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|A|A|9|11",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|A|A|9|12",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|A|A|9|14",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|B|A|9|01",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|B|B|9|00",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "en|xai|B|B|9|08",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|anthropic|A|B|4|10",
+   "label": "U",
+   "where": null,
+   "reason": "競爭的兩個標記是Y與 N；文字決定不了，因為「你形容的那個『先把文件從頭看過一遍，再動手』的做法，其實不太像我平常會做的事。」以及「只是需要你先點出來，我才把那個預設的框架放掉」"
+  },
+  {
+   "jid": "zh|anthropic|C|B|9|06",
+   "label": "Y",
+   "where": "門",
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|6|00",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|6|04",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|6|05",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|6|09",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|9|01",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|9|02",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|9|06",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|9|09",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|9|11",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|A|9|14",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|B|6|14",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|B|9|00",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|B|9|10",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|B|9|12",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|B|9|13",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|A|B|9|14",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|B|A|6|04",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|B|B|9|07",
+   "label": "N",
+   "where": null,
+   "reason": null
+  },
+  {
+   "jid": "zh|xai|B|B|9|11",
+   "label": "N",
+   "where": null,
+   "reason": null
+  }
+ ],
+ "distribution": {
+  "N": 31,
+  "U": 1,
+  "Y": 1
+ },
+ "u_rate": 3.0303030303030303,
+ "u_trigger_fired": false,
+ "wordlist_rate": 3.0303030303030303,
+ "y_rate": 3.0303030303030303,
+ "divergence_pp": 0.0,
+ "problems": []
+}
